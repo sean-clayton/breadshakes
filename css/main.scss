@@ -1,0 +1,74 @@
+---
+# This is the Front Matter block
+---
+
+@import "bourbon/bourbon";
+@import "shake";
+
+html, body {
+  @include background(linear-gradient(top right, #f00, #ff0, #0f0, #0ff, #00f, #f00));
+  background-attachment: fixed;
+  font-family: "Dekko", comic-sans;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+}
+
+header {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  
+  h1 {
+    font-size: 8em;
+    font-family: "Dekko", comic-sans;
+    text-shadow: 0 3px 0 rgba(black, .5), 0 0 1em rgba(white, .75);
+    z-index: 1;
+  }
+}
+
+.text-bread {
+  color: #FFB2FE;
+}
+
+.text-shakes {
+  color: #FDFF6B;
+}
+
+#bread {
+  height: 100vh;
+  @include flex(1);
+}
+
+footer {
+  @include display(flex);
+  @include justify-content(flex-end);
+  position: absolute;
+  height: 2em;
+  bottom: 0;
+  right: 0;
+  text-shadow: 0 0 3px rgba(white, 1);
+  font-size: 2em;
+  
+  a {
+    color: #D11734;
+    text-decoration: none;
+  }
+}
+
+.sauce {
+  color: #1C6BBE;
+}
