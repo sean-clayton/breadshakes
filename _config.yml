@@ -4,7 +4,7 @@ email: sean@seanclayton.me
 description: > # this means to ignore newlines until "baseurl:"
   Literally just shaking bread. Literally.
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://breadshakes.com" # the base hostname & protocol for your site
+url: "https://breadshakes.com" # the base hostname & protocol for your site
 twitter_username: seanybingbong
 github_username:  sean-clayton
 
